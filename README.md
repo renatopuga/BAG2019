@@ -1,8 +1,14 @@
 # BAG2019
-BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO
+BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO (Turma SP - 2019)
+
+# Intrutores
+
+* Dra Andréa Laurato Sertié
+* Dra Karina Griesi Oliveira
+* Msc Murilo Cervato
+* Msc Renato Puga
 
 # Bioinformática: Pipelines e Comandos
-
 
 Olá, bem vindo ao curso de **BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO**, aqui encontrará um guia do curso para executar comandos e pipelines de bioinformática.
 
@@ -16,7 +22,6 @@ Vamos utilizar uma instância na Amazon Cloud com Sistema Operacional Linux Ubun
 
 # Estrutura de Diretórios
 Estrutura de diretórios: sequências, programas e arquivos de referência.
-
 
 * /bioinfo
 	* /bioinfo/app
@@ -103,7 +108,7 @@ Agora, é preciso indexar o arquivo FASTA da referência. Todos os programas de 
 bwa index hg19.fa 
 ```
 
-#FastQC: Relatório de Controle de Qualidade
+# FastQC: Relatório de Controle de Qualidade
 Gerar relatório de controle de qualidade com FastQC (Tempo ~10s):
 
 ```bash
