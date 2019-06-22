@@ -79,7 +79,7 @@ mkdir 003 017 019
 # Download das Referências
 Nesta estapa vamos utilizar dois cromossomos humanos (chr13 e chr17), nossos genes de interesse são: BRCA1 e BRCA2. [NCBI BRCA 1 and 2](https://www.ncbi.nlm.nih.gov/books/NBK470239/)
 
-Acessar o site Sequence and Annotation Downloads: [Clique aqui](http://hgdownload.cse.ucsc.edu/downloads.html)
+Acessar o site: [Sequence and Annotation Downloads](http://hgdownload.cse.ucsc.edu/downloads.html)
 
 
 ```bash
