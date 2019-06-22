@@ -1,7 +1,7 @@
 # BAG2019
 BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO (Turma SP - 2019)
 
-# Intrutores
+# Instrutores
 
 * Dra Andréa Laurato Sertié
 * Dra Karina Griesi Oliveira
