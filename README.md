@@ -356,7 +356,7 @@ resultados/003/003.avinput /bioinfo/app/annovar/humandb/ \
 
 ANNOVAR table_annovar 003 resultado
 
-# Documentação Extras
+# Documentação Extra
 
 * A Importância da Uniformidade de Cobertura sobre a Taxa de Alvos para NGS [Acessar White Paper](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
 * Referências bibliográficas aula – Bases Moleculares do Sequenciamento de Nova Geração
