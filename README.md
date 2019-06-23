@@ -32,7 +32,8 @@ brew install fastqc
 brew install bwa
 
 # install cutadapt
-brew install cutadapt
+brew install python
+pip3 install --user --upgrade cutadapt
 
 # install freebayes
 cd
@@ -42,6 +43,8 @@ cd bioinfo/app
 git clone --recursive git://github.com/ekg/freebayes.git
 make
 sudo make install
+
+
 ```
 
 * Windows
