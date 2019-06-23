@@ -130,6 +130,7 @@ Acessar o site: [Sequence and Annotation Downloads](http://hgdownload.cse.ucsc.e
 
 
 ```bash
+
 cd /bioinfo/reference
 
 # wget para fazer download do chr13
