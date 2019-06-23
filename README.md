@@ -218,7 +218,7 @@ BWA-mem 003 resultado
 
 ### Tarefa 03: Repetir o processo para as amostras 017 e 019
 
-#samtools: fixmate, sort e index
+# samtools: fixmate, sort e index
 
 ## samtools fixmate
 
