@@ -1,6 +1,12 @@
 # BAG2019
 **B**ioinformática **A**plicada à **G**enômica (BAG): Introdução à Análise de Dados de Sequenciamento de Nova Geração (Turma SP - 2019)
 
+O desenvolvimento das tecnologias de sequenciamento de nova geração (Next Generation Sequence - NGS) propiciou o sequenciamento global do genoma, exoma ou transcriptoma, revolucionando a área médica. Além disso, trouxe consigo a necessidade do desenvolvimento de ferramentas computacionais para análise do grande volume de dados gerados por estas técnicas. Desta forma, conhecer e saber manipular estes dados com ferramentas de bioinformática tornou-se de grande importância e um diferencial para profissionais da área da saúde atualmente.
+
+Explorando a integração entre as ciências médicas e as ciências computacionais, este curso irá discutir como o NGS tem contribuído para o entendimento das causas genéticas de doenças humanas. Também será abordado, de maneira teórica e prática, o uso das ferramentas de bioinformática necessárias para o processamento dos dados brutos de um sequenciamento, até o seu mapeamento contra um genoma referência e identificação das variantes.
+
+https://www.einstein.br/ensino/atualizacao/bioinformatica_aplicada_a_genomica
+
 # Instrutores
 
 * Dra Andréa Laurato Sertié
