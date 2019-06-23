@@ -85,14 +85,14 @@ Acessar o site: [Sequence and Annotation Downloads](http://hgdownload.cse.ucsc.e
 ```bash
 cd /bioinfo/reference
 
-# wget para fazer download do chr17
+# wget para fazer download do chr13
 wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr13.fa.gz
 
-# wget para fazer download do chr13 
+# wget para fazer download do chr17 
 wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr17.fa.gz
 
 # cat para concatenar os arquivo do cromossomo 13 e 17 em hg19.fa
-cat chr13.fa chr17.fa > hg19.fa
+zcat chr13.fa.gz chr17.fa.gz > hg19.fa
 
 # rm para deletar os arquivos chr13.fa e chr17.fa
 rm chr13.fa chr17.fa
