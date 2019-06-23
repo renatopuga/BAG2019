@@ -31,6 +31,9 @@ brew install fastqc
 # install bwa
 brew install bwa
 
+# install wget
+brew install wget
+
 # install cutadapt
 brew install python
 pip3 install --user --upgrade cutadapt
