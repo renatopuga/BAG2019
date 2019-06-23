@@ -365,7 +365,6 @@ ANNOVAR table_annovar 003 resultado
 
 * Referências bibliográficas aula – Bases Moleculares do Sequenciamento de Nova Geração
 
-	* ABM knowledge base - Introdução a NGS
 	* https://www.abmgood.com/marketing/knowledge_base/next_generation_sequencing_introduction.php
 	* https://www.youtube.com/watch?time_continue=60&v=jFCD8Q6qSTM
 	* https://www.illumina.com/science/technology/next-generation-sequencing.html#
