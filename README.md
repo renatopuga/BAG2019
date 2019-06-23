@@ -8,6 +8,29 @@ BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQU
 * Msc Murilo Cervato
 * Msc Renato Puga
 
+# Install
+
+* Mac
+
+```bash
+# historico completo homebrews
+git -C "$(brew --repo homebrew/core)" fetch --unshallow
+
+# install java
+brew install java
+
+# install samtools
+brew install samtools
+
+# install 
+brew install fastqc
+```
+
+* Windows
+	* VirtualBox - Cliente para montar nossa Virtual Machine Linux [VirtualBox](https://www.virtualbox.org)
+	* Bio-Linux 8 - [Download .ISO](http://nebc.nerc.ac.uk/downloads/bio-linux-8-latest.iso)
+
+
 # Bioinformática: Pipelines e Comandos
 
 Olá, bem vindo ao curso de **BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO**, aqui encontrará um guia do curso para executar comandos e pipelines de bioinformática.
