@@ -13,6 +13,9 @@ BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQU
 * Mac
 
 ```bash
+# install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # historico completo homebrews
 git -C "$(brew --repo homebrew/core)" fetch --unshallow
 
@@ -181,7 +184,7 @@ Alinha sequencias de tamanho 70bp-1Mbp com o algoritmo BWA-MEM. Em resumo o algo
 cd
 
 # rodar bwa para alinhar as sequencias contra o genoma de referencia
-bwa mem -R '@RG\tID:CAP\tSM:CAP01_NGSA\tLB:Agilent\tPL:illumina' \ 
+bwa mem -R '@RG\tID:003\tSM:003_NGSA\tLB:Agilent\tPL:Ion' \ 
 ~/references/hg19.fa \
 /bioinfo/data/fastq/003.fastq.gz > resultados/003/003.sam
 ```
