@@ -8,7 +8,7 @@ BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQU
 * Msc Murilo Cervato
 * Msc Renato Puga
 
-# Install
+# Instalação
 
 * FASTQ [Download Google Drive](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
 
@@ -355,3 +355,49 @@ resultados/003/003.avinput /bioinfo/app/annovar/humandb/ \
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
 
 ANNOVAR table_annovar 003 resultado
+
+# Documentação Extras
+
+* A Importância da Uniformidade de Cobertura sobre a Taxa de Alvos para NGS [Acessar White Paper](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
+* Referências bibliográficas aula – Bases Moleculares do Sequenciamento de Nova Geração
+
+	* ABM knowledge base - Introdução a NGS
+	* https://www.abmgood.com/marketing/knowledge_base/next_generation_sequencing_introduction.php
+	* https://www.youtube.com/watch?time_continue=60&v=jFCD8Q6qSTM
+	* https://www.illumina.com/science/technology/next-generation-sequencing.html#
+	* https://www.illumina.com/content/dam/illumina-marketing/documents/products/illumina_sequencing_introduction.pdf
+
+* Aplicações do NGS
+
+	* https://www.illumina.com/techniques/sequencing.html
+
+* Bases moleculares do sequenciamento
+Preparação de biblioteca e design experimental:
+	* https://www.youtube.com/watch?list=PLTt9kKfqE_0FigC-9K6doNq_D83BE9Kzw&v=-kTcFZxP6kM
+	* https://www.youtube.com/watch?v=PGAfwSRYv1g&index=2&list=PLTt9kKfqE_0FigC-9K6doNq_D83BE9Kzw
+	* https://www.abmgood.com/marketing/knowledge_base/next_generation_sequencing_experimental_design.php
+	* https://www.illumina.com/techniques/sequencing/dna-sequencing/targeted-resequencing.html
+	* https://www.thermofisher.com/br/en/home/life-science/sequencing/next-generation-sequencing/ion-torrent-next-generation-sequencing-workflow/ion-torrent-next-generation-sequencing-select-targets.html
+	* https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html
+	* https://www.illumina.com/science/technology/next-generation-sequencing/multiplex-sequencing.html
+	* https://www.illumina.com/science/education/sequencing-coverage.html
+	* https://www.illumina.com/science/technology/next-generation-sequencing/deep-sequencing.html
+	* https://www.illumina.com/science/technology/next-generation-sequencing/mate-pair-sequencing.html
+
+* Ferramentas para escolha de kits de preparo de biblioteca e de corrida Ion Torrent:
+	* https://www.thermofisher.com/br/en/home/life-science/sequencing/next-generation-sequencing/ion-torrent-next-generation-sequencing-workflow/ion-torrent-next-generation-sequencing-construct-library.html
+	* https://www.thermofisher.com/br/en/home/life-science/sequencing/next-generation-sequencing/ion-torrent-next-generation-sequencing-workflow/ion-torrent-next-generation-sequencing-run-sequence.html
+
+* Ferramentas para escolha de kits de preparo de biblioteca e de corrida Illumina:
+	* https://www.illumina.com/products/selection-tools.html
+	* https://www.illumina.com/systems/sequencing-platforms/comparison-tool.html
+	* https://www.illumina.com/techniques/sequencing/ngs-library-prep/library-prep-methods.html
+
+* Sequenciamento:
+	* Illumina: https://www.youtube.com/watch?v=fCd6B5HRaZ8
+	* Ion Torrent: https://www.youtube.com/watch?v=WYBzbxIfuKs
+
+* Análise dos dados
+	* https://www.illumina.com/informatics/sequencing-data-analysis.html
+	* https://www.abmgood.com/marketing/knowledge_base/next_generation_sequencing_data_analysis.php
+	* https://www.youtube.com/watch?v=l4BAfRekohk
