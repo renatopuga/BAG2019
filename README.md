@@ -50,6 +50,16 @@ git clone --recursive git://github.com/ekg/freebayes.git
 make
 sudo make install
 
+# install dabases annovar
+# NOTA: entreno no site do ANNOVAR com seu e-mail e salve o arquivo no diretorio: ~/bionfo/app/
+
+cd ~/bioinfo/app/
+tar -zxvf annovar.latest.tar.gz
+cd annovar
+
+# baixar as bases: clinvar e exac03
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20180603 humandb/
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humandb/
 
 ```
 
