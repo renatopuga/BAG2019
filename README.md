@@ -14,9 +14,11 @@ https://www.einstein.br/ensino/atualizacao/bioinformatica_aplicada_a_genomica
 * Msc Murilo Cervato
 * Msc Renato Puga
 
-# Instalação
+# Arquivos .FASTQ
 
 * FASTQ [Download Google Drive](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
+
+# Instalação
 
 * Mac
 
