@@ -263,7 +263,7 @@ SAMTOOLS index 003 resultado
 
 Tempo: ~1min
 
-#freebayes: chamador de variantes
+# freebayes: chamador de variantes
 O FreeBayes é um detector variante genético Bayesiano projetado para encontrar pequenos polimorfismos, especificamente SNPs (polimorfismos de nucleotídeo único), indels (inserções e deleções), MNPs (polimorfismos de múltiplos nucleotídeos) e eventos complexos (eventos compostos de inserção e substituição) menores que os comprimento de um alinhamento de seqüenciamento de leitura curta. Link. Tempo (~6min):
 
 ```bash
