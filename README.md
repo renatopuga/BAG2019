@@ -67,6 +67,30 @@ perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humand
 	* VirtualBox - Cliente para montar nossa Virtual Machine Linux [VirtualBox](https://www.virtualbox.org)
 	* Bio-Linux 8 - [Download .ISO](http://nebc.nerc.ac.uk/downloads/bio-linux-8-latest.iso)
 
+No terminal do Linux, vamos instalar alguns pacotes: (o resto vem instalado).
+
+``` bash
+# install freebayes
+cd
+mkdir bioinfo
+mkdir bioinfo/app
+cd bioinfo/app
+git clone --recursive git://github.com/ekg/freebayes.git
+make
+sudo make install
+
+# install dabases annovar
+# NOTA: entreno no site do ANNOVAR com seu e-mail e salve o arquivo no diretorio: ~/bionfo/app/
+
+cd ~/bioinfo/app/
+tar -zxvf annovar.latest.tar.gz
+cd annovar
+
+# baixar as bases: clinvar e exac03
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20180603 humandb/
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humandb/
+```
+
 
 # Bioinformática: Pipelines e Comandos
 
