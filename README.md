@@ -1,5 +1,5 @@
 # BAG2019
-BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQUENCIAMENTO DE NOVA GERAÇÃO (Turma SP - 2019)
+**B**ioinformática **A**plicada à **G**enômica (BAG): Introdução à Análise de Dados de Sequenciamento de Nova Geração (Turma SP - 2019)
 
 # Instrutores
 
