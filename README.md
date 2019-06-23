@@ -27,6 +27,21 @@ brew install samtools
 
 # install 
 brew install fastqc
+
+# install bwa
+brew install bwa
+
+# install cutadapt
+brew install cutadapt
+
+# install freebayes
+cd
+mkdir bioinfo
+mkdir bioinfo/app
+cd bioinfo/app
+git clone --recursive git://github.com/ekg/freebayes.git
+make
+sudo make install
 ```
 
 * Windows
