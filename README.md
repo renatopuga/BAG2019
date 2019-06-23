@@ -10,6 +10,8 @@ BIOINFORMÁTICA APLICADA À GENÔMICA: INTRODUÇÃO À ANÁLISE DE DADOS DE SEQU
 
 # Install
 
+* FASTQ [Download Google Drive](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
+
 * Mac
 
 ```bash
