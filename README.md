@@ -201,7 +201,7 @@ cutadapt --minimum-length 100 --maximum-length 220 -q 15  -o resultados/003/003.
 
 ### Tarefa 02: Repetir o processo para as amostras 017 e 019
 
-#BWA-mem: maximal exact matches
+# BWA-mem: maximal exact matches
 Alinha sequencias de tamanho 70bp-1Mbp com o algoritmo BWA-MEM. Em resumo o algoritmo trabalha com "alinhamento por sementes" com maximal exact matches (MEMs) e então estendendo sementes com o algoritmo Smith-Waterman (SW). Link. Tempo (~60s):
 
 ```bash
