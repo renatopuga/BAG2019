@@ -272,7 +272,7 @@ freebayes -f ~/references/hg19.fa \
 
 ### Parâmetros
 
-```bash
+
 ```bash
  -C --min-alternate-count N
                    Require at least this count of observations supporting
