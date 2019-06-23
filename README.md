@@ -38,6 +38,9 @@ brew install wget
 brew install python
 pip3 install --user --upgrade cutadapt
 
+cd /usr/local/bin
+sudo ln -s ~/Library/Python/3.7/bin/cutadapt .
+
 # install freebayes
 cd
 mkdir bioinfo
