@@ -358,7 +358,11 @@ ANNOVAR table_annovar 003 resultado
 
 # Documentação Extra
 
+
+* Criar arquivos BEDs com UCSC table browser [Paste In Identifiers for GENCODE v29](https://genome.ucsc.edu/cgi-bin/hgTables)
+
 * A Importância da Uniformidade de Cobertura sobre a Taxa de Alvos para NGS [Acessar White Paper](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
+
 * Referências bibliográficas aula – Bases Moleculares do Sequenciamento de Nova Geração
 
 	* ABM knowledge base - Introdução a NGS
