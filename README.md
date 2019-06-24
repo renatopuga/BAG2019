@@ -253,9 +253,7 @@ Alinha sequencias de tamanho 70bp-1Mbp com o algoritmo BWA-MEM. Em resumo o algo
 cd
 
 # rodar bwa para alinhar as sequencias contra o genoma de referencia
-bwa mem -R '@RG\tID:003\tSM:003_NGSA\tLB:Agilent\tPL:Ion' \ 
-~/references/hg19.fa \
-/bioinfo/data/fastq/003.fastq.gz > resultados/003/003.sam
+bwa mem -R '@RG\tID:003\tSM:003_NGSA\tLB:Agilent\tPL:Ion'  ~/references/hg19.fa /bioinfo/data/fastq/003.fastq.gz > resultados/003/003.sam
 ```
 
 BWA-mem 003 resultado
@@ -283,8 +281,7 @@ Tempo: ~10min
 O ***samtools sort*** vai ordenar de nome para ordem de coordenadas. Tempo (5s):
 
 ```bash
-time samtools sort -O bam \ 
--o resultados/003/003_sort.bam -T /tmp/ resultados/003/003.bam 
+time samtools sort -O bam -o resultados/003/003_sort.bam -T /tmp/ resultados/003/003.bam 
 ```
 
 SAMTOOLS sort 003 resultado
@@ -311,10 +308,7 @@ Tempo: ~1min
 O FreeBayes é um detector variante genético Bayesiano projetado para encontrar pequenos polimorfismos, especificamente SNPs (polimorfismos de nucleotídeo único), indels (inserções e deleções), MNPs (polimorfismos de múltiplos nucleotídeos) e eventos complexos (eventos compostos de inserção e substituição) menores que os comprimento de um alinhamento de seqüenciamento de leitura curta. Link. Tempo (~6min):
 
 ```bash
-freebayes -f ~/references/hg19.fa \ 
--F 0.01 \
--C 1 \
---pooled-continuous resultados/003/003_sort.bam > resultados/003/003.vcf
+freebayes -f ~/references/hg19.fa -F 0.01 -C 1 --pooled-continuous resultados/003/003_sort.bam > resultados/003/003.vcf
 ```
 
 ### Parâmetros
@@ -343,8 +337,7 @@ ANNOVAR éma ferramenta eficiente para anotar funcionalmente variantes genética
 
 
 ```bash                   
-perl /bioinfo/app/annovar/convert2annovar.pl \
--format vcf4 resultados/003/003.vcf > resultados/003/003.avinput
+perl /bioinfo/app/annovar/convert2annovar.pl -format vcf4 resultados/003/003.vcf > resultados/003/003.avinput
 ``` 
  
 ANNOVAR convert2annovar 003 resultado
@@ -354,10 +347,7 @@ ANNOVAR convert2annovar 003 resultado
 Anotar as variantes chamadas utilizando algumas bases de dados públicas: Tempo (~5s).
 
 ```
-perl /bioinfo/app/annovar/table_annovar.pl \ 
-resultados/003/003.avinput /bioinfo/app/annovar/humandb/ \
--buildver hg19 -out resultados/003/003 -remove \ 
--protocol refGene,exac03,clinvar_20180603 -operation g,f,f -nastring .
+perl /bioinfo/app/annovar/table_annovar.pl resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -buildver hg19 -out resultados/003/003 -remove -protocol refGene,exac03,clinvar_20180603 -operation g,f,f -nastring .
 ```
 
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
