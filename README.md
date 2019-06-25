@@ -435,7 +435,7 @@ chr13	32911321	32911334	TAAAAAAGATTTGG	AAAAAAAGATTTTGGT	exonic	BRCA2	.	frameshif
 chr13	32911443	32911443	A	-	exonic	BRCA2	.	frameshift deletion	BRCA2:NM_000059:exon11:c.2951delA:p.E984fs	.	248944	Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2	MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555	reviewed_by_expert_panel	Pathogenic
 ```
 
-Utilize o commando `less -SN resultados/003/003.hg19_multianno.txt` para percorrer o arquivo de anotação. Para sair do comando less pressiona a tecla `q`.
+Utilize o commando `less -SN resultados/003/003.hg19_multianno.txt` para visualizar o arquivo de anotação. Para sair do comando less pressione a tecla `q`.
 
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
 
