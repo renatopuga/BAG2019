@@ -347,7 +347,7 @@ ANNOVAR convert2annovar 003 resultado
 Anotar as variantes chamadas utilizando algumas bases de dados públicas: Tempo (~5s).
 
 ```
-perl /bioinfo/app/annovar/table_annovar.pl resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -buildver hg19 -out resultados/003/003 -remove -protocol refGene,exac03,clinvar_20180603 -operation g,f,f -nastring .
+perl /bioinfo/app/annovar/table_annovar.pl resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -buildver hg19 -out resultados/003/003 -remove -protocol refGene,exac03,clinvar_20190114 -operation g,f,f -nastring .
 ```
 
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
