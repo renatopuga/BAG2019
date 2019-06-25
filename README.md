@@ -16,7 +16,7 @@ https://www.einstein.br/ensino/atualizacao/bioinformatica_aplicada_a_genomica
 
 # Arquivos & Dados
 
-* hands on: Olá Ambiente de Bioinformática, Primeiros Comandos, NGS Formatos e Métricas de Qualidade de Sequenciamento. [Download] https://drive.google.com/drive/folders/1FjReBQrm-JVGgCMZDtYaufoR4JzjPlTz
+* Aula: Olá Ambiente de Bioinformática, Primeiros Comandos, NGS Formatos e Métricas de Qualidade de Sequenciamento. [Download](https://drive.google.com/drive/folders/1FjReBQrm-JVGgCMZDtYaufoR4JzjPlTz)
 * FASTQ [Download Google Drive](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
 
 # Instalação
