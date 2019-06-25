@@ -340,7 +340,7 @@ ANNOVAR éma ferramenta eficiente para anotar funcionalmente variantes genética
 perl /bioinfo/app/annovar/convert2annovar.pl -format vcf4 resultados/003/003.vcf > resultados/003/003.avinput
 ``` 
 
-***output:***
+***output: mensagens na tela***
  
 ```bash
 -----------------------------------------------------------------
@@ -350,6 +350,25 @@ NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver h
 NOTICE: Output files were written to resultados/003/003.refGene.variant_function, resultados/003/003.refGene.exonic_variant_function
 Error: cannot read from --queryfile (resultados/003/003.avinput): No such file or directory
 Error running system command: <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile resultados/003/003.refGene -exonsort resultados/003/003.avinput /bioinfo/app/annovar/humandb/>
+```
+
+**Arquivo .avinput**
+
+
+```bash
+# comando head para listar as 10 primeiras linhas do arquivo 003.avinput
+head resultados/003/003.avinput
+
+chr13	19127992	19127992	G	A	hom	11.313	1
+chr13	19128097	19128097	A	G	hom	19.0318	1
+chr13	19128113	19128113	T	A	hom	15.1147	1
+chr13	19650636	19650636	T	CAA	hom	12.2464	1
+chr13	19650650	19650650	T	A	hom	2.53014	1
+chr13	19650671	19650671	G	C	hom	19.0318	1
+chr13	19650676	19650683	GCCTGAGC	ACACGACT	hom	11.313	1
+chr13	19650695	19650703	TGTATGGAT	CATACAGAG	hom	14.1494	1
+chr13	19650738	19650746	TCCTTCACG	CCCTGGACA	hom	16.0868	1
+chr13	19650770	19650770	G	A	hom	19.0318	1
 ```
  
 ANNOVAR convert2annovar 003 resultado
@@ -398,9 +417,26 @@ NOTICE: Scanning filter database /bioinfo/app/annovar/humandb/hg19_clinvar_20190
 NOTICE: Multianno output file is written to resultados/003/003.hg19_multianno.txt
 ```
 
-### Tarefa 09: Repetir o processo para as amostras 017 e 019
+**Arquivo .hg19_multiano.txt**
 
-ANNOVAR table_annovar 003 resultado
+```bash
+# filtro com o comando grep para buscar apenas o cabeçalho e variantes do tipo exonic
+grep "^Chr\|exonic" 003.hg19_multianno.txt  | head
+
+Chr	Start	End	Ref	Alt	Func.refGene	Gene.refGene	GeneDetail.refGene	ExonicFunc.refGene	AAChange.refGene	ExAC_ALL	ExAC_AFR	ExAC_AMR	ExAC_EAS	ExAC_FIN	ExAC_NFE	ExAC_OTH	ExAC_SAS	CLNALLELEID	CLNDN	CLNDISDB	CLNREVSTAT	CLNSIG
+chr13	32906565	32906565	-	A	exonic	BRCA2	.	frameshift insertion	BRCA2:NM_000059:exon10:c.951dupA:p.T317fs	8.321e-06	0	0	0.0001	0	0	0	0	67538	Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2|not_provided	MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C0006142,OMIM:114480,Orphanet:ORPHA227535,SNOMED_CT:254843006|MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555|MedGen:CN517202	reviewed_by_expert_panel	Pathogenic
+chr13	32906729	32906729	A	C	exonic	BRCA2	.	nonsynonymous SNV	BRCA2:NM_000059:exon10:c.A1114C:p.N372H	0.2779	0.1249	0.3049	0.2728	0.2331	0.2818	0.2677	0.3558	24368	Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Fanconi_anemia|Hereditary_cancer-predisposing_syndrome|Ductal_breast_carcinoma|Breast-ovarian_cancer,_familial_2|not_specified|not_provided	MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C0006142,OMIM:114480,Orphanet:ORPHA227535,SNOMED_CT:254843006|MedGen:C0015625,Orphanet:ORPHA84,SNOMED_CT:30575002|MedGen:C0027672,SNOMED_CT:699346009|MedGen:C1527349|MedGen:C2675520,OMIM:612555|MedGen:CN169374|MedGen:CN517202	reviewed_by_expert_panel	Benign
+chr13	32907215	32907215	-	A	exonic	BRCA2	.	frameshift insertion	BRCA2:NM_000059:exon10:c.1601dupA:p.E534fs	.	.
+chr13	32907303	32907303	G	-	exonic	BRCA2	.	frameshift deletion	BRCA2:NM_000059:exon10:c.1688delG:p.W563fs	.	234658	Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2	MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555	reviewed_by_expert_panel	Pathogenic
+chr13	32907421	32907421	A	-	exonic	BRCA2	.	frameshift deletion	BRCA2:NM_000059:exon10:c.1806delA:p.G602fs	.	46319	Hereditary_breast_and_ovarian_cancer_syndrome|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2|not_provided	MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555|MedGen:CN517202	reviewed_by_expert_panel	Pathogenic
+chr13	32910430	32910430	C	T	exonic	BRCA2	.	synonymous SNV	BRCA2:NM_000059:exon11:c.C1938T:p.S646S	0.0009	0.0002	0.0008	0	0	0.0015	0	0	65898	Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Fanconi_anemia|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2|not_specified|not_provided	MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C0006142,OMIM:114480,Orphanet:ORPHA227535,SNOMED_CT:254843006|MedGen:C0015625,Orphanet:ORPHA84,SNOMED_CT:30575002|MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555|MedGen:CN169374|MedGen:CN517202	reviewed_by_expert_panel	Benign
+chr13	32910661	32910661	-	A	exonic	BRCA2	.	frameshift insertion	BRCA2:NM_000059:exon11:c.2170dupA:p.S723fs	.	46332	Neoplasm_of_the_breast|Hereditary_breast_and_ovarian_cancer_syndrome|Breast-ovarian_cancer,_familial_2	Human_Phenotype_Ontology:HP:0100013,MeSH:D001943,MedGen:C1458155,Orphanet:ORPHA180250,SNOMED_CT:126926005|MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C2675520,OMIM:612555	reviewed_by_expert_panel	Pathogenic
+chr13	32911321	32911334	TAAAAAAGATTTGG	AAAAAAAGATTTTGGT	exonic	BRCA2	.	frameshift substitution	BRCA2:NM_000059:exon11:c.2829_2842AAAAAAAGATTTTGGT	.	.	.	.	.	.	.	.	.	.	.	.	.
+chr13	32911443	32911443	A	-	exonic	BRCA2	.	frameshift deletion	BRCA2:NM_000059:exon11:c.2951delA:p.E984fs	.	248944	Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2	MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555	reviewed_by_expert_panel	Pathogenic
+```
+
+
+### Tarefa 09: Repetir o processo para as amostras 017 e 019
 
 # Documentação Extra
 
