@@ -339,6 +339,18 @@ ANNOVAR éma ferramenta eficiente para anotar funcionalmente variantes genética
 ```bash                   
 perl /bioinfo/app/annovar/convert2annovar.pl -format vcf4 resultados/003/003.vcf > resultados/003/003.avinput
 ``` 
+
+***output:***
+ 
+```bash
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile resultados/003/003.refGene -exonsort resultados/003/003.avinput /bioinfo/app/annovar/humandb/>
+NOTICE: Output files were written to resultados/003/003.refGene.variant_function, resultados/003/003.refGene.exonic_variant_function
+Error: cannot read from --queryfile (resultados/003/003.avinput): No such file or directory
+Error running system command: <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile resultados/003/003.refGene -exonsort resultados/003/003.avinput /bioinfo/app/annovar/humandb/>
+```
  
 ANNOVAR convert2annovar 003 resultado
 
@@ -348,6 +360,42 @@ Anotar as variantes chamadas utilizando algumas bases de dados públicas: Tempo 
 
 ```
 perl /bioinfo/app/annovar/table_annovar.pl resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -buildver hg19 -out resultados/003/003 -remove -protocol refGene,exac03,clinvar_20190114 -operation g,f,f -nastring .
+```
+
+***output:***
+
+```bash
+-----------------------------------------------------------------
+NOTICE: Processing operation=g protocol=refGene
+
+NOTICE: Running with system command <annotate_variation.pl -geneanno -buildver hg19 -dbtype refGene -outfile resultados/003/003.refGene -exonsort resultados/003/003.avinput /bioinfo/app/annovar/humandb/>
+NOTICE: Output files were written to resultados/003/003.refGene.variant_function, resultados/003/003.refGene.exonic_variant_function
+NOTICE: Reading gene annotation from /bioinfo/app/annovar/humandb/hg19_refGene.txt ... Done with 63481 transcripts (including 15216 without coding sequence annotation) for 27720 unique genes
+NOTICE: Processing next batch with 2312 unique variants in 2312 input lines
+NOTICE: Reading FASTA sequences from /bioinfo/app/annovar/humandb/hg19_refGeneMrna.fa ... Done with 11 sequences
+WARNING: A total of 402 sequences will be ignored due to lack of correct ORF annotation
+-----------------------------------------------------------------
+NOTICE: Processing operation=f protocol=exac03
+NOTICE: Finished reading 8 column headers for '-dbtype exac03'
+
+NOTICE: Running system command <annotate_variation.pl -filter -dbtype exac03 -buildver hg19 -outfile resultados/003/003 resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -otherinfo>
+NOTICE: the --dbtype exac03 is assumed to be in generic ANNOVAR database format
+NOTICE: Variants matching filtering criteria are written to resultados/003/003.hg19_exac03_dropped, other variants are written to resultados/003/003.hg19_exac03_filtered
+NOTICE: Processing next batch with 2312 unique variants in 2312 input lines
+NOTICE: Database index loaded. Total number of bins is 749886 and the number of bins to be scanned is 70
+NOTICE: Scanning filter database /bioinfo/app/annovar/humandb/hg19_exac03.txt...Done
+-----------------------------------------------------------------
+NOTICE: Processing operation=f protocol=clinvar_20190114
+NOTICE: Finished reading 5 column headers for '-dbtype clinvar_20190114'
+
+NOTICE: Running system command <annotate_variation.pl -filter -dbtype clinvar_20190114 -buildver hg19 -outfile resultados/003/003 resultados/003/003.avinput /bioinfo/app/annovar/humandb/ -otherinfo>
+NOTICE: the --dbtype clinvar_20190114 is assumed to be in generic ANNOVAR database format
+NOTICE: Variants matching filtering criteria are written to resultados/003/003.hg19_clinvar_20190114_dropped, other variants are written to resultados/003/003.hg19_clinvar_20190114_filtered
+NOTICE: Processing next batch with 2312 unique variants in 2312 input lines
+NOTICE: Database index loaded. Total number of bins is 45640 and the number of bins to be scanned is 54
+NOTICE: Scanning filter database /bioinfo/app/annovar/humandb/hg19_clinvar_20190114.txt...Done
+-----------------------------------------------------------------
+NOTICE: Multianno output file is written to resultados/003/003.hg19_multianno.txt
 ```
 
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
