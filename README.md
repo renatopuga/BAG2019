@@ -421,7 +421,7 @@ NOTICE: Multianno output file is written to resultados/003/003.hg19_multianno.tx
 
 ```bash
 # filtro com o comando grep para buscar apenas o cabeçalho e variantes do tipo exonic
-grep "^Chr\|exonic" 003.hg19_multianno.txt  | head
+grep "^Chr\|exonic" resultados/003/003.hg19_multianno.txt  | head
 
 Chr	Start	End	Ref	Alt	Func.refGene	Gene.refGene	GeneDetail.refGene	ExonicFunc.refGene	AAChange.refGene	ExAC_ALL	ExAC_AFR	ExAC_AMR	ExAC_EAS	ExAC_FIN	ExAC_NFE	ExAC_OTH	ExAC_SAS	CLNALLELEID	CLNDN	CLNDISDB	CLNREVSTAT	CLNSIG
 chr13	32906565	32906565	-	A	exonic	BRCA2	.	frameshift insertion	BRCA2:NM_000059:exon10:c.951dupA:p.T317fs	8.321e-06	0	0	0.0001	0	0	0	0	67538	Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2|not_provided	MeSH:D061325,MedGen:C0677776,Orphanet:ORPHA145|MedGen:C0006142,OMIM:114480,Orphanet:ORPHA227535,SNOMED_CT:254843006|MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555|MedGen:CN517202	reviewed_by_expert_panel	Pathogenic
@@ -435,6 +435,7 @@ chr13	32911321	32911334	TAAAAAAGATTTGG	AAAAAAAGATTTTGGT	exonic	BRCA2	.	frameshif
 chr13	32911443	32911443	A	-	exonic	BRCA2	.	frameshift deletion	BRCA2:NM_000059:exon11:c.2951delA:p.E984fs	.	248944	Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer,_familial_2	MedGen:C0027672,SNOMED_CT:699346009|MedGen:C2675520,OMIM:612555	reviewed_by_expert_panel	Pathogenic
 ```
 
+Utilize o commando `less -SN resultados/003/003.hg19_multianno.txt` para percorrer o arquivo de anotação. Para sair do comando less pressiona a tecla `q`.
 
 ### Tarefa 09: Repetir o processo para as amostras 017 e 019
 
