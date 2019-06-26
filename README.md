@@ -90,6 +90,9 @@ git clone --recursive git://github.com/ekg/freebayes.git
 make
 sudo make install
 
+# zlib
+sudo apt-get install zlib1g
+
 # install dabases annovar
 # NOTA: entreno no site do ANNOVAR com seu e-mail e salve o arquivo no diretorio: ~/bionfo/app/
 
