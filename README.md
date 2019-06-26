@@ -69,7 +69,7 @@ tar -zxvf annovar.latest.tar.gz
 cd annovar
 
 # baixar as bases: clinvar e exac03
-perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20180603 humandb/
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20190114  humandb/
 perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humandb/
 
 ```
@@ -101,7 +101,7 @@ tar -zxvf annovar.latest.tar.gz
 cd annovar
 
 # baixar as bases: clinvar e exac03
-perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20180603 humandb/
+perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar clinvar_20190114  humandb/
 perl annotate_variation.pl -buildver hg19 -downdb -webfrom annovar exac03 humandb/
 ```
 
