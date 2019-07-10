@@ -19,6 +19,31 @@ https://www.einstein.br/ensino/atualizacao/bioinformatica_aplicada_a_genomica
 * Aula: Olá Ambiente de Bioinformática, Primeiros Comandos, NGS Formatos e Métricas de Qualidade de Sequenciamento. [Download](https://drive.google.com/drive/folders/1FjReBQrm-JVGgCMZDtYaufoR4JzjPlTz)
 * FASTQ [Download Google Drive](https://drive.google.com/open?id=1zAL8GVZuKKmroRe1NKMKtd3L067ZyZBO)
 
+# Download dos Arquivos .FASTQ (no Google Drive) direto do terminal
+
+```bash
+# download do script para copiar os dados 
+git clone https://github.com/circulosmeos/gdown.pl.git
+
+# entrar no diretorio gdwon.pl
+cd gdown.pl
+
+# rodar o script ./gdown.pl download
+./gdown.pl https://drive.google.com/open?id=1LlBQ2BNI_vF-E_4ntrEexJQ2-Wea2e0o 003.fastq.gz
+./gdown.pl https://drive.google.com/open?id=1KKmk90gUk0174MvATZzWRwyqRSHJNZDv 017.fastq.gz
+./gdown.pl https://drive.google.com/open?id=11jtliN2G0vTs50-z79QxXLWkStPeuh2E 019.fastq.gz
+
+# criar o diretorio no home (caso ele ainda nao exista)
+mkdir ~/bioinfo/
+mkdir ~/bioinfo/data
+mkdir ~/bioinfo/data/fastq
+mv 003.fastq.gz 017.fastq.gz 019.fastq.gz  ~/bioinfo/data/fastq
+
+# voltar para o home
+cd
+```
+
+
 # Instalação
 
 * Mac
