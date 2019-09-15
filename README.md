@@ -282,7 +282,7 @@ Alinha sequencias de tamanho 70bp-1Mbp com o algoritmo BWA-MEM. Em resumo o algo
 cd
 
 # rodar bwa para alinhar as sequencias contra o genoma de referencia
-bwa mem -R '@RG\tID:003\tSM:003_NGSA\tLB:Agilent\tPL:Ion'  ~/references/hg19.fa /bioinfo/data/fastq/003.fastq.gz > resultados/003/003.sam
+bwa mem -R '@RG\tID:003\tSM:003_NGSA\tLB:Agilent\tPL:Ion'  ~/reference/hg19.fa /bioinfo/data/fastq/003.fastq.gz > resultados/003/003.sam
 ```
 
 BWA-mem 003 resultado
@@ -337,7 +337,7 @@ Tempo: ~1min
 O FreeBayes é um detector variante genético Bayesiano projetado para encontrar pequenos polimorfismos, especificamente SNPs (polimorfismos de nucleotídeo único), indels (inserções e deleções), MNPs (polimorfismos de múltiplos nucleotídeos) e eventos complexos (eventos compostos de inserção e substituição) menores que os comprimento de um alinhamento de seqüenciamento de leitura curta. Link. Tempo (~6min):
 
 ```bash
-freebayes -f ~/references/hg19.fa -F 0.01 -C 1 --pooled-continuous resultados/003/003_sort.bam > resultados/003/003.vcf
+freebayes -f ~/reference/hg19.fa -F 0.01 -C 1 --pooled-continuous resultados/003/003_sort.bam > resultados/003/003.vcf
 ```
 
 ### Parâmetros
